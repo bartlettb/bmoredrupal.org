@@ -96,6 +96,9 @@
         </div>
         <!-- /.section -->
     </div>
+	<div id="footer-copyrights">
+         <p>Powered by Drupal. <span>Built by <a href="http://simpleinformation.com/" target="_blank">Simple Information.</a><span></p>
+    </div>
     <!-- /#footer --> 
 </div>
 <!-- /#page-wrapper -->

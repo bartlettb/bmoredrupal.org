@@ -1,10 +1,10 @@
 (function($) {
 new WOW().init();
  $(document).ready(function(){
-	 $('#header').height($(window).height()+'px');
-	 $('#block-block-1').height($(window).height()+'px'); 
+	 $('.front #header').height($(window).height()+'px');
+	 $('.front #block-block-1').height($(window).height()+'px'); 
 	 var vid = document.getElementById("videobg");
-	vid.playbackRate = 0.5;
+	vid.playbackRate = 0.2;
  });	 
  $(window).load(function(){
 		var sponsors_selectors = $('.sponsors-filter li a');
