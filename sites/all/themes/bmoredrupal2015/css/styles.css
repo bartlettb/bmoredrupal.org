@@ -9,7 +9,7 @@ body {
 }
 
 a {
-    color: #45AED6;
+    color: #99A4A8;
     text-decoration: none;
     transition: color 400ms ease 0s, background-color 400ms ease 0s;
 }
@@ -53,7 +53,7 @@ ol li {
 }
 
 ol li::after {
-    background: #45aed6 none repeat scroll 0 0;
+    background: #99A4A8 none repeat scroll 0 0;
     border: 2px solid #90defc;
     border-radius: 20px;
     content: "";
@@ -111,8 +111,8 @@ ol li::after {
 }
 
 .block.block-system.block-menu ul li a.active, .block.block-system.block-menu ul li a:hover {
-    background: #89defc none repeat scroll 0 0;
-    border-top: 10px solid #45aed6;
+    background: #AFB1B2 none repeat scroll 0 0;
+    border-top: 10px solid #99A4A8;
     padding-top: 30px;
 	color: #000;
 }
@@ -173,7 +173,7 @@ a.btn.blue.big:hover{
 }
 
 a.btn.blue.big {
-    background: #45aed6 none repeat scroll 0 0;
+    background: #99A4A8 none repeat scroll 0 0;
     color: #fff;
     display: inline-block;
     font-size: 18px;
@@ -203,7 +203,7 @@ a.btn.blue.big {
 }
 
 #sponsors h2::after {
-    background: #45aed6 none repeat scroll 0 0;
+    background: #99A4A8 none repeat scroll 0 0;
     border: 5px solid #90defc;
     border-radius: 20px;
     bottom: -35px;
@@ -242,7 +242,7 @@ a.btn.blue.big {
 }
 
 #sponsors .sponsors-filter > li a:hover, #sponsors .sponsors-filter > li a.active {
-    background: #45aed6 none repeat scroll 0 0;
+    background: #99A4A8 none repeat scroll 0 0;
     box-shadow: 0 -3px 0 0 #318daf inset;
     color: #fff;
 }
@@ -287,7 +287,7 @@ a.btn.blue.big {
 #sponsors h3.sponsors-item {
     border-bottom: 1px solid #e5e5e5;
     clear: both;
-    color: #45AED6;
+    color: #99A4A8;
     display: block;
     float: left;
     font-size: 25px;
@@ -379,7 +379,7 @@ a.btn.blue.big {
 }
 
 h1.title {
-    color: #45aed6;
+    color: #99A4A8;
 }
 
 label {
@@ -587,7 +587,7 @@ input.form-submit:hover{
 }
 
 input.form-submit {
-    background: #45aed6 none repeat scroll 0 0;
+    background: #99A4A8 none repeat scroll 0 0;
     border: medium none;
     color: #fff;
     display: inline-block;
