@@ -5,8 +5,21 @@ new WOW().init();
 	 $('.front #block-block-1').height($(window).height()+'px'); 
 	 var vid = document.getElementById("videobg");
 	vid.playbackRate = 0.2;
+	
+	
  });	 
  $(window).load(function(){
+	$('.sponsors-block .view-content h3').each(function(){
+	  $(this).addClass($(this).next().attr('class'));
+	});
+	
+	$('.sponsors-block .sponsors-items').before('<ul class="sponsors-filter"></ul>');
+	$('.sponsors-filter').append('<li><a href="#" data-filter="*" class="active">All sponsors</a></li>');
+	$('.sponsors-block .view-content h3').each(function(){
+	  var item = $(this).next().attr('class').split(' ');
+	  var itemText = $(this).text().split(' ');
+	  $('.sponsors-filter').append('<li><a href="#" data-filter=".'+item[0]+'">'+itemText[0]+'</a></li>');
+	});
 		var sponsors_selectors = $('.sponsors-filter li a');
 		var sponsors = $('.sponsors-items');
 		sponsors.isotope({
