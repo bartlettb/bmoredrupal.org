@@ -599,6 +599,10 @@ input.form-submit {
     transition: color 400ms ease 0s, background-color 400ms ease 0s;
 }
 
+<<<<<<< HEAD
+=======
+/* styles for Submitted sessions page */
+>>>>>>> d403b3cdbeddec859afbf92b3421484d07900a83
 .view-submitted-sessions ul li {
   	margin: 0 0 20px 0;
   	list-style-type: none;
@@ -620,4 +624,7 @@ input.form-submit {
 .view-submitted-sessions ul li .views-field-field-description {
 	font-style: italic;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> d403b3cdbeddec859afbf92b3421484d07900a83
