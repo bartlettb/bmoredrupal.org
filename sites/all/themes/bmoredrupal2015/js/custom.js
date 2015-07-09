@@ -1,11 +1,12 @@
 (function($) {
 new WOW().init();
  $(document).ready(function(){
+   var vid = document.getElementById("videobg");
+   if (typeof(vid) != "undefined" && vid !== null) {
 	 $('.front #header').height($(window).height()+'px');
 	 $('.front #block-block-1').height($(window).height()+'px'); 
-	 var vid = document.getElementById("videobg");
 	vid.playbackRate = 0.2;
-	
+   }	
 	
  });	 
  $(window).load(function(){
