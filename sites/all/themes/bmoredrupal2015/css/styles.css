@@ -598,3 +598,26 @@ input.form-submit {
     padding: 10px 24px;
     transition: color 400ms ease 0s, background-color 400ms ease 0s;
 }
+
+/* styles for Submitted sessions page */
+.view-submitted-sessions ul li {
+  	margin: 0 0 20px 0;
+  	list-style-type: none;
+	font-size: 0.9em;
+	line-height: 1.4em;
+}
+.view-submitted-sessions ul li .views-field .field-content {
+	display: inline;
+}
+
+.view-submitted-sessions ul li .views-field .views-label {
+	font-weight: bold;
+}
+
+.view-submitted-sessions ul li .views-field-field-session-title {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.view-submitted-sessions ul li .views-field-field-description {
+	font-style: italic;
+}
