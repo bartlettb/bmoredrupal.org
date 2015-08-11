@@ -7,6 +7,11 @@ new WOW().init();
 	 $('.front #block-block-1').height($(window).height()+'px'); 
 	vid.playbackRate = 0.2;
    }	
+   
+   $('.block.block-system.block-menu ul').before('<span class="fa fa-list-ul"></span>');
+   $('.block.block-system.block-menu span.fa').click(function(){
+	  $(this).next().slideToggle( "slow" ); 
+   });
 	
  });	 
  $(window).load(function(){
