@@ -139,6 +139,7 @@ ol li::after {
     position: absolute;
     top: 30%;
     width: 1000px;
+    padding-top:65px;
 }
 
 .logo-right {
