@@ -644,10 +644,12 @@ body {
     display: none;
 }
 
+.not-front .logo-content,
 .logo-content {
     font-size: 15px;
     font-weight: 500;
     margin: 0 auto;
+    padding: 0;
     position: static;
     width: 90%;
 }
@@ -750,13 +752,14 @@ body {
 }
 
 #main {
-    padding: 80px 10px 10px;
+    padding: 100px 10px 10px;
 }
 
 h1.title, h2 { 
     font-size: 20px; 
 }
 
+input.form-submit,
 a.btn.blue.big {
     background: #2a95be none repeat scroll 0 0; 
     font-size: 14px; 
@@ -780,8 +783,9 @@ span.fa.fa-list-ul {
 }
 
 #sponsors .content { 
-    text-align: center; 
-	padding: 0px;
+    padding: 0;
+    text-align: center;
+    width: 100%;
 }
 
 .parking-block .content-left {
@@ -889,6 +893,40 @@ span.fa.fa-list-ul {
     transition: transform 0.1s ease 0s;
     width: 40px;
     z-index: 1;
+}
+
+fieldset {
+    box-sizing: border-box;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    width: 100%;
+}
+
+input.form-text, select.form-select {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+ul.primary {
+    border: medium none;
+    margin: 10px 0 30px;
+    padding: 0;
+}
+
+ul.primary li {
+    display: block;
+}
+
+ul.primary li a {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #1f6f8e !important;
+    display: block;
+    padding: 10px;
+}
+
+ul.primary li.active a {
+    background: #2481a5 none repeat scroll 0 0;
+    color: #fff;
 }
 
 }
