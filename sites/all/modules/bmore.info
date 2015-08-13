@@ -1,0 +1,7 @@
+name = Bmore
+description = Custom stuff for Bmore Drupal site
+package = Bmore
+core = 7.x
+
+dependencies[] = rules
+dependencies[] = registration
