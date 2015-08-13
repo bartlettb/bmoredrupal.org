@@ -1,0 +1,57 @@
+<?php
+
+// thank you https://www.drupal.org/node/1777204
+/**
+ * Implementation of hook_rules_condition_info().
+ */
+function bmore_rules_condition_info() {
+  return array(
+    'bmore_condition_account_exists_by_email' => array(
+      'label' => t('User Account exists by email'),
+      'parameter' => array(
+        'email' => array(
+          'label' => t('Email address to search for existing user account'),
+          'type' => 'text',
+        ),
+      ),
+      'group' => t('User'),
+    ),
+
+    'bmore_condition_account_exists_by_name' => array(
+      'label' => t('User Account exists by username'),
+      'parameter' => array(
+        'username' => array(
+          'label' => t('Username to search for existing user account'),
+          'type' => 'text',
+        ),
+      ),
+      'group' => t('User'),
+    ),
+  );
+}
+
+/**
+ * Condition implementation.
+ */
+function bmore_condition_account_exists_by_email($email) {
+  $query = db_select('users', 'u');
+  $query->condition('mail', $email, '=')
+    ->fields('u',array('uid','mail'))
+    ->range(0,1);
+  $results = $query->execute()->fetchAll();
+
+  $matches = (count($results) > 0) ? TRUE : FALSE;
+  return $matches;
+}
+
+function bmore_condition_account_exists_by_name($username) {
+  $query = db_select('users', 'u');
+  $query->condition('name', $username, '=')
+    ->fields('u',array('uid','name'))
+    ->range(0,1);
+  $results = $query->execute()->fetchAll();
+
+  $matches = (count($results) > 0) ? TRUE : FALSE;
+  return $matches;
+}
+
